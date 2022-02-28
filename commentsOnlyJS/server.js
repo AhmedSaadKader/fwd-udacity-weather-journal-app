@@ -1,8 +1,6 @@
 // Setup empty JS object to act as endpoint for all routes
 // Express to run server and routes
 
-const { append } = require("vary");
-
 // Start up an instance of app
 
 /* Dependencies */
@@ -17,6 +15,5 @@ const { append } = require("vary");
 // Spin up the server
 
 // Callback to debug
-
 
 // Post Route
