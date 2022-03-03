@@ -37,7 +37,9 @@ function sendData(req, res) {
     temperature: req.body.temperature,
     date: req.body.date,
     userResponse: req.body.userResponse,
+    name: req.body.name,
   };
+  console.log(newEntry);
   projectData = Object.keys(newEntry).map((key) => {
     return { [key]: newEntry[key] };
   });
