@@ -39,10 +39,7 @@ function sendData(req, res) {
     userResponse: req.body.userResponse,
   };
   projectData = Object.keys(newEntry).map((key) => {
-    console.log(key);
-    console.log(newEntry[key]);
     return { [key]: newEntry[key] };
   });
   res.send(projectData);
-  console.log(projectData);
 }

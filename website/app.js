@@ -18,16 +18,13 @@ function performAction(e) {
   getWeatherData(baseURL, zipCode, apiKey)
     //   Post fetched data from API into our API endpoint
     .then(function (data) {
-      //   console.log(data);
+      console.log(data);
       postData("/all", {
         temperature: data.main.temp,
         date: newDate,
         userResponse: userResponse,
       });
-      //   retrieveData("/all");
-    })
-    .then(function () {
-      retrieveData();
+      retrieveData("/all");
     });
 }
 /* Function to GET Web API Data*/
@@ -36,7 +33,7 @@ const getWeatherData = async (baseURL, zip, key) => {
   //   console.log(baseURL + zip + key);
   try {
     const data = await res.json();
-    // console.log(data);
+    console.log(data);
     return data;
   } catch (error) {
     console.log(error);
@@ -56,7 +53,7 @@ const postData = async (url = "", data = {}) => {
 
   try {
     const newData = await response.json();
-    // console.log(newData);
+    console.log(newData);
     return newData;
   } catch (error) {
     console.log("error", error);
