@@ -1,3 +1,4 @@
+/* styling based on tutorial by webDevSimplified tutorial >>> https://github.com/WebDevSimplified/JavaScript-Weather-App  */
 body {
   background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
   display: flex;
@@ -42,11 +43,6 @@ body {
 }
 .title {
   text-align: center;
-}
-
-span {
-  text-align: center;
-  text-indent: 4em;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
